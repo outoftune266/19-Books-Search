@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Header from "./components/Header/Header";
 import Search from "./pages/Search";
 import Saved from "./pages/Saved";
 import "./App.css";
+import API from "./utils/API";
 
 function App() {
   return (

@@ -1,4 +1,4 @@
-//import axios from "axios";
+import axios from "axios";
 
 export default {
   getBooks: function () {
@@ -19,5 +19,13 @@ export default {
   saveBook: function (bookData) {
     console.log("Save Book");
     return axios.post("/api/books", bookData);
+  },
+
+  searchBooks: function (searchTerm, bookData) {
+    console.log("Search Book API call");
+    return axios.get(
+      "https://www.googleapis.com/books/v1/volumes?q=q" + searchTerm,
+      bookData
+    );
   },
 };
