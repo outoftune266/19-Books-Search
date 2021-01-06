@@ -1,7 +1,8 @@
 import React from "react";
+import "./header.css";
 
 function Header() {
-  return <h1>Book It!: A search tool</h1>;
+  return <h1 className="header">Book It!: A search tool</h1>;
 }
 
 export default Header;

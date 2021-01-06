@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import API from "../utils/API";
 import Searchbar from "../components/Searchbar/Searchbar";
 import Book from "../components/Book/Book";
-import { List, ListItem } from "../components/List";
+import "./Search.css";
 
 function Search() {
   const [searchTerm, setSearchTerm] = useState({});
@@ -51,7 +50,6 @@ function Search() {
 
   return (
     <div>
-      <h1>Search</h1>
       <Searchbar
         handleInputChange={handleInputChange}
         handleFormSubmit={handleFormSubmit}

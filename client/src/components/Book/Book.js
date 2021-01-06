@@ -1,11 +1,12 @@
 import React from "react";
+import "./Book.css";
 
 function Book(props) {
   let book = props.bookInfo;
   //console.log("Book Component");
   //console.log(book);
   return (
-    <div class="card mb-3" style={{ "max-width": "80%" }}>
+    <div class="card mb-3 bookcard">
       <div class="row g-0">
         <div class="col-md-4">
           <div class="row">

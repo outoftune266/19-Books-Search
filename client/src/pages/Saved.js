@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SavedBook from "../components/SavedBook/SavedBook";
 import API from "../utils/API";
+import "./Saved.css";
 
 function Saved() {
   const [savedBooks, setSavedBooks] = useState([]);
@@ -24,7 +25,7 @@ function Saved() {
 
   return (
     <div>
-      <h1>Saved Books</h1>
+      <h2>Saved Books</h2>
       {savedBooks.length ? (
         <div>
           {savedBooks.map((book) => (

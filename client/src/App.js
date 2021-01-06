@@ -5,22 +5,25 @@ import Header from "./components/Header/Header";
 import Search from "./pages/Search";
 import Saved from "./pages/Saved";
 import "./App.css";
-import API from "./utils/API";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <Router>
       <div>
         <Navbar />
-        <Header />
-        <Switch>
-          <Route exact path={["/", "/search"]}>
-            <Search />
-          </Route>
-          <Route exact path="/saved">
-            <Saved />
-          </Route>
-        </Switch>
+        <div class="container">
+          <Header />
+          <Switch>
+            <Route exact path={["/", "/search"]}>
+              <Search />
+            </Route>
+            <Route exact path="/saved">
+              <Saved />
+            </Route>
+          </Switch>
+        </div>
+        <Footer />
       </div>
     </Router>
   );
